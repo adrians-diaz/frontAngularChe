@@ -1,0 +1,33 @@
+.contenedorMesas{
+
+    
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    .mesasUnicas{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: bisque;
+        width: 15vw;
+        
+        text-align: center;
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 1rem;  
+        border-radius: 10px; 
+        
+    }
+    .tituloMesa{
+    
+        color: white;
+        font-size: 35px;
+    }
+}
+.spaces {
+    height: 20vh;
+  }

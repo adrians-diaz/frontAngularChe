@@ -1,0 +1,41 @@
+<section class="productosSection">
+    <div class="space">
+
+    </div>
+    <div class="botones">
+        <button class="botonI" (click)="onClick('cerveza')" >CERVEZAS</button>
+        <button class="botonC" (click)="onClick('cocktel')" >COCTELES</button>
+        <button class="botonD" (click)="onClick('sinAlcohol')" >SIN ALCOHOL</button>
+    </div>
+
+    <div class="fondo cerveza" [ngStyle]="{'display':visibleCerveza?'flex':'none'}">
+        <div class="fondo_contenedor-producto"  *ngFor="let carta of cartasListRubia" > 
+            <label>{{carta.producto}}</label>
+            <img class="producto" src="{{carta.imagen}}" alt="{{carta.producto}}">
+            <p class="texto">{{carta.descripcion}}<p>
+            <p><strong>{{carta.precio}} €</strong><p>
+            <button class="buttonPlus">+</button>
+        </div>
+    </div>
+    <div class="fondo cocktel" [ngStyle]="{'display':visibleCocktel?'flex':'none'}">
+        <div class="fondo_contenedor-producto"  *ngFor="let carta of cartasListCoctel">
+            <label>{{carta.producto}}</label>
+            <img class="producto" src="{{carta.imagen}}" alt="{{carta.producto}}">
+            <p class="texto">{{carta.descripcion}}<p>
+            <p><strong>{{carta.precio}} €</strong><p>
+            <button class="buttonPlus">+</button>
+        </div>
+    </div>
+    <div class="fondo sinAlcohol" [ngStyle]="{'display':visiblesinAlcohol?'flex':'none'}">
+        <div class="fondo_contenedor-producto"  *ngFor="let carta of cartasListSinAlcohol">
+            <label>{{carta.producto}}</label>
+            <img class="producto" src="{{carta.imagen}}" alt="{{carta.producto}}">
+            <p class="texto">{{carta.descripcion}}<p>
+            <p><strong>{{carta.precio}} €</strong><p>
+            <button class="buttonPlus">+</button>
+        </div>
+    </div>
+
+    
+
+</section>

@@ -1,0 +1,13 @@
+<main class="mesasSection">
+    <div class="spaces">
+
+    </div> 
+    <div class="contenedorMesas" >
+        <div *ngFor="let mesa of mesasList let i = index" class="mesasUnicas">
+            <h1 class="tituloMesa">{{mesa.name}}</h1>
+            <p>zona: {{mesa.zona}}</p>
+            <p>Numero de comensales: {{mesa.comensales}}</p>
+            <button>+</button>
+        </div>
+    </div>   
+</main>
